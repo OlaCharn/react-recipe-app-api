@@ -8,4 +8,4 @@ API: edamam.com
 
 ![Recipe Appl](https://github.com/OlaCharn/react-recipe-app-api/blob/main/src/screenshot.png?raw=true)
 
-⭐ Deployed at: (<>)
+⭐ Deployed at: (<https://reaact-recipe-app-api-edamam.netlify.app/>)
