@@ -1,38 +1,160 @@
 .App {
+ text-align: center;
+}
+.InputButton{
+  display: flex;
+  justify-content: center;
+}
+input{
+  width:300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Label{
+  margin-top: 60px;
+  height: 90px;
+}
+h1{
+  color: #337179;
+  font-family: 'Oswald', sans-serif;
+
+}
+h2{
+  font-family: 'Cabin', sans-serif;
+  color: #337179;
+}
+h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #337179;
+}
+.Ing{
+  margin-top: 10px;
+}
+.lupa{
+  width:30px
+}
+.CardOfRecipes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 50px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width:300px;
+  
+}
+.imgLabel{
+  border-radius: 15px;
+}
+
+.list{
+  list-style: none;
+  width: 250px;
+  margin-left: none;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+}
+li::before {
+  content: "•"; 
+  color: #49C5B1;
+  display: inline-block;
+  width: 1em;
+  margin-left: -2em;
+}
+.buttonMain{
+  background-color: transparent;
+  border: none;
+}
+.diets{
+  display: flex;
+  flex-direction: row;
+}
+.diet{
+  margin-left: 10px;
+}
+a{
+  color: aliceblue;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.ButtonOpenMe{
+  margin: 10px;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #49C5B1;
+  font-family: 'Oswald', sans-serif;
+}
+.Method{
+  display: flex;
+  flex-direction: row;
+}
+.kitchen{
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.kcal{
+  color:white;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  top: -70%;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.tooltip-right {
+  /* Modify size here: */
+  --size: 80px;
+  --padding: 2px;
+
+  position: relative;
+  width: calc(var(--size) - var(--padding));
+  height: calc(var(--size) / 5);
+  background: #49C5B1;
+  padding: var(--padding);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tooltip-right:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #49C5B1;
+  height: 16px;
+  width: 16px;
 }
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.8;
+  color: #337179;
+  font-family: 'Cabin', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+@media all and (max-width:700px){
+  .InputButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  input{
+    margin: 10px;
+    width:285px;
+    padding: 10px;
+    border-radius: 10px;
   }
-  to {
-    transform: rotate(360deg);
   }
-}
