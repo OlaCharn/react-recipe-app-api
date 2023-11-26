@@ -3,8 +3,9 @@
 I have made this project to learn React by building applications
 
 with  API + useEffect + useState + Props
+
 API: edamam.com
 
-![Recipe Appl]()
+![Recipe Appl](https://github.com/OlaCharn/react-recipe-app-api/blob/main/src/screenshot.png?raw=true)
 
-⭐ Deployed at: (<>)
+⭐ Deployed at: (<https://reaact-recipe-app-api-edamam.netlify.app/>)
