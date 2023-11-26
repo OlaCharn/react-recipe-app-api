@@ -48,10 +48,11 @@ function App() {
 
         <form onSubmit={finalSearch} >
           <input onChange={myRecipeSearch} value = {mySearch} placeholder='Search for anything' />
-        </form>
-        <button onClick={finalSearch} className='buttonMain' >
+          <button onClick={finalSearch} className='buttonMain' >
           <img  src= {lupa} alt="lupa" className='lupa' />
         </button>
+
+        </form>
 
       </div>
 
