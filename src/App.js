@@ -38,43 +38,33 @@ function App() {
   }
 
   return (
-    <div >
-
+    <div>
       <div className="App" >
         <h1>Find Your Recipe</h1>
       </div>
 
       <div className='InputButton' >
-
         <form onSubmit={finalSearch} >
           <input onChange={myRecipeSearch} value = {mySearch} placeholder='Search for anything' />
           <button onClick={finalSearch} className='buttonMain' >
           <img  src= {lupa} alt="lupa" className='lupa' />
         </button>
-
         </form>
-
       </div>
-
-
       <div className='CardOfRecipes'>
-
       {myRecipe.map((element,index) => ( 
-    
         <MyRecComponent key={index}
-                        propsForLabel={element.recipe.label} 
-                        propsForImage={element.recipe.image}
-                        propsForCuisinType={element.recipe.cuisineType}
-                        propsForIngredients= { element.recipe.ingredientLines }
-                        propsForDietLabels= { element.recipe.dietLabels}
-                        propsForCalories= { element.recipe.calories}
-                        propsForMealType= { element.recipe.mealType}
-                        propsForUrl= {element.recipe.url}
-                        />
-                                            
-      )) }
-    </div>
-
+                    propsForLabel={element.recipe.label} 
+                    propsForImage={element.recipe.image}
+                    propsForCuisinType={element.recipe.cuisineType}
+                    propsForIngredients= { element.recipe.ingredientLines }
+                    propsForDietLabels= { element.recipe.dietLabels}
+                    propsForCalories= { element.recipe.calories}
+                    propsForMealType= { element.recipe.mealType}
+                    propsForUrl= {element.recipe.url}
+                    />          
+      ))}
+      </div>
     </div>
   );
 }

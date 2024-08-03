@@ -6,11 +6,9 @@ function MyRecComponent( {propsForLabel, propsForImage, propsForCuisinType , pro
     return(
         <div > 
         <div  className="card">
-
             <div>
                 <img src={propsForImage} alt="food" width="300px" height="300px" className="imgLabel"  />
             </div>
- 
             <div className="diets kitchen">
                 <p ><img src= { kitchenIcon } width="20px" alt="icon" />{ propsForCuisinType.map((cuisine, id) => {
                     return cuisine[0].toUpperCase() + cuisine.slice(1)
@@ -47,7 +45,6 @@ function MyRecComponent( {propsForLabel, propsForImage, propsForCuisinType , pro
                     ))}
                 </ul>
             </div>
-
 
             <div className="Method">
                 <h3>Method </h3>
